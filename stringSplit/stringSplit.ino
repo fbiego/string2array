@@ -1,17 +1,15 @@
 
-int z = 5;
+int z = 5; // size of array
 
 void setup() {
-  // put your setup code here, to run once:
   Serial.begin(9600);
 
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
   if (Serial.available()){
     String rd = Serial.readStringUntil('\n');
-    stringSplit(rd,',');
+    stringSplit(rd,','); //parameters String & delimiter
     
   }
 
@@ -51,7 +49,7 @@ void stringSplit(String s, char a){
     }
     Serial.println(";");
   } else {
-    Serial.println(s);    //delimiter not found
+    Serial.println(s);    //no delimiter not found, print original string
   }
   
 
