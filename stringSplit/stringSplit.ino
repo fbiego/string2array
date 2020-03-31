@@ -49,7 +49,7 @@ void stringSplit(String s, char a){
     }
     Serial.println(";");
   } else {
-    Serial.println(s);    //no delimiter not found, print original string
+    Serial.println(s);    //no delimiter found, print original string
   }
   
 
